@@ -27,7 +27,7 @@ bin/
 .bundle/
 .sass-cache/
 /vendor/bundle
-/themes/*
+!/themes/mybootstrap
 !/themes/bootstrap
 !/themes/typographic
 gems/
