@@ -26,4 +26,15 @@ Publify::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "mail.inuni.co",
+    port: 25,
+    authentication: "plain",
+    user_name: "vivek@inuni.co",
+    password: ENV['SMTP_PASSWORD'],
+    enable_starttls_auto: false
+  }
+  config.action_mailer.raise_delivery_errors = true
 end
