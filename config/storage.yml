@@ -1,0 +1,5 @@
+provider: AWS
+engine: AWS
+aws_access_key_id: AKIAJX3LNYPFQZVXAHRQ
+aws_secret_access_key: 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
+aws_bucket: blog-sheffield
