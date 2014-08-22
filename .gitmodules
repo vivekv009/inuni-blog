@@ -1,7 +1,6 @@
 [submodule "typographic"]
   path = themes/typographic
   url = https://github.com/publify/typographic.git
-
-[submodule "mybootstrap"]
-  path = themes/mybootstrap
-  url = https://github.com/vivekv009/mybootstrap.git
+[submodule "themes/mybootstrap"]
+	path = themes/mybootstrap
+	url = git://github.com/vivekv009/mybootstrap.git
