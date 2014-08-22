@@ -20,7 +20,8 @@ else
     end
   end
 
-  conf = YAML.load(File.read(dbfile))
+  require 'erb'
+  conf = YAML.load(ERB.new(File.read(dbfile)).result)
   environment = conf[env]
   adapter = environment['adapter'] if environment
   raise "You need define an adapter in your database.yml or set your RAILS_ENV variable" if adapter == '' || adapter.nil?
@@ -55,6 +56,8 @@ gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 gem 'carrierwave'
 gem 'akismet', '~> 1.0'
 gem 'twitter', '~> 5.6.0'
+gem 'unf'
+gem 'thin'
 
 gem "jquery-rails", "~> 3.1.0"
 gem "jquery-ui-rails", "~> 4.2.0"
@@ -69,7 +72,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'thin'
+  
   gem 'factory_girl', '~> 4.2.0'
   gem 'webrat'
   gem 'rspec-rails', '~> 2.99.0'
