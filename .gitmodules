@@ -4,4 +4,4 @@
 
 [submodule "mybootstrap"]
 	path = themes/mybootstrap
-	url = git://github.com/vivekv009/mybootstrap.git
+	url = https://github.com/vivekv009/mybootstrap.git
