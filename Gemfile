@@ -59,6 +59,7 @@ gem 'akismet', '~> 1.0'
 gem 'twitter', '~> 5.6.0'
 gem 'unf'
 gem 'thin'
+gem 'hpricot'
 
 gem "jquery-rails", "~> 3.1.0"
 gem "jquery-ui-rails", "~> 4.2.0"
