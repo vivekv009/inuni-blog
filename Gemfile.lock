@@ -91,7 +91,6 @@ GEM
       fog-json
     formatador (0.2.5)
     hike (1.2.3)
-    hpricot (0.8.6)
     htmlentities (4.3.2)
     http (0.5.1)
       http_parser.rb
@@ -247,7 +246,6 @@ DEPENDENCIES
   factory_girl (~> 4.2.0)
   flickraw-cached
   fog
-  hpricot
   htmlentities
   jquery-rails (~> 3.1.0)
   jquery-ui-rails (~> 4.2.0)
