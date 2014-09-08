@@ -1,20 +1,34 @@
-  username: root
-  password: g61x2bhps9
-  adapter: mysql2
-  encoding: utf8
-  password: 
-  host: 54.77.182.117
-  port: 3306 
 
 
 development:
+  adapter: mysql2
   database: publify_dev
-  <<: *login
+  username: root
+  password: 
+  host: localhost
+  encoding: utf8 
+  port: 3306 
+  pool: 5
+  timeout: 5000
 
 test:
-  database: publify_tests
-  <<: *login
+  adapter: mysql2
+  database: publify_test
+  username: root
+  password: 
+  host: localhost
+  port: 3306 
+  encoding: utf8 
+  pool: 5
+  timeout: 5000  
 
 production:
+  adapter: mysql2
   database: publify
-  <<: *login
+  username: root
+  password: g61x2bhps9
+  host: 54.77.182.117
+  encoding: utf8
+  port: 3306
+  pool: 5
+  timeout: 5000
