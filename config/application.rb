@@ -30,7 +30,7 @@ module Publify
     config.filter_parameters << :password
 
     # To avoid exception when deploying on Heroku
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
 
     # Time to step into asset pipeline…
     config.assets.enabled = true
