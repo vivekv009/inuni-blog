@@ -1,6 +1,6 @@
 login: &login
   adapter: mysql2
-  host: localhost
+  host: 54.72.222.192
   username: root
   password:
 
