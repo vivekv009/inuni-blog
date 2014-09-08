@@ -3,7 +3,7 @@
   adapter: mysql2
   encoding: utf8
   password: 
-  host: 54.72.222.192
+  host: 54.77.182.117
   port: 3306 
 
 

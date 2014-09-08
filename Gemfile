@@ -59,7 +59,7 @@ gem 'carrierwave'
 gem 'akismet', '~> 1.0'
 gem 'twitter', '~> 5.6.0'
 gem 'unf'
-gem 'thin'
+#gem 'thin'
 gem 'hpricot'
 
 gem "jquery-rails", "~> 3.1.0"
