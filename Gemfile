@@ -9,9 +9,7 @@ if ENV["HEROKU"]
   gem "pg"
 else
 
-  require 'erb'
-  conf = YAML.load(ERB.new(File.read(dbfile)).result)
-
+  
   require 'yaml'
   env = ENV["RAILS_ENV"] || 'development'
   dbfile = File.expand_path("../config/database.yml", __FILE__)
@@ -23,6 +21,9 @@ else
       raise "You need to configure config/database.yml first"
     end
   end
+
+  require 'erb'
+  conf = YAML.load(ERB.new(File.read(dbfile)).result)
 
   
   environment = conf[env]
