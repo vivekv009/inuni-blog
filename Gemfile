@@ -40,6 +40,7 @@ end
 
 gem 'rails', '~> 3.2.18'
 gem 'therubyracer'
+gem 'mysql2'
 gem 'htmlentities'
 gem 'bluecloth', '~> 2.1'
 gem 'coderay', '~> 1.1.0'
