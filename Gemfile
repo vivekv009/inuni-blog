@@ -11,7 +11,7 @@ else
 
   
   require 'yaml'
-  env = ENV["RAILS_ENV"] || 'development'
+  # env = ENV["RAILS_ENV"] || 'development'
   # dbfile = File.expand_path("../config/database.yml", __FILE__)
 
   # unless File.exists?(dbfile)
@@ -24,7 +24,7 @@ else
 
   # FileUtils.cp "config/database.yml", 'config/database.yml'
 
-  # require 'erb'
+  require 'erb'
   # conf = YAML.load(ERB.new(File.read(dbfile)).result)
 
   
