@@ -22,10 +22,10 @@ else
   #   end
   # end
 
-  FileUtils.cp "config/database.yml", 'config/database.yml'
+  # FileUtils.cp "config/database.yml", 'config/database.yml'
 
-  require 'erb'
-  conf = YAML.load(ERB.new(File.read(dbfile)).result)
+  # require 'erb'
+  # conf = YAML.load(ERB.new(File.read(dbfile)).result)
 
   
   environment = conf[env]
