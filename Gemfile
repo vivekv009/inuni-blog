@@ -12,15 +12,17 @@ else
   
   require 'yaml'
   env = ENV["RAILS_ENV"] || 'development'
-  dbfile = File.expand_path("../config/database.yml", __FILE__)
+  # dbfile = File.expand_path("../config/database.yml", __FILE__)
 
-  unless File.exists?(dbfile)
-    if ENV['DB']
-      FileUtils.cp "config/database.yml.#{ENV['DB'] || 'mysql'}", 'config/database.yml'
-    else
-      raise "You need to configure config/database.yml first"
-    end
-  end
+  # unless File.exists?(dbfile)
+  #   if ENV['DB']
+  #     FileUtils.cp "config/database.yml.#{ENV['DB'] || 'mysql'}", 'config/database.yml'
+  #   else
+  #     raise "You need to configure config/database.yml first"
+  #   end
+  # end
+
+  FileUtils.cp "config/database.yml", 'config/database.yml'
 
   require 'erb'
   conf = YAML.load(ERB.new(File.read(dbfile)).result)
