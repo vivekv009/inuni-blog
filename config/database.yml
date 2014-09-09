@@ -27,7 +27,7 @@ production:
   database: publify
   username: root
   password: or14g6914r
-  host: 54.76.156.156
+  host: 172.31.19.186
   encoding: utf8
   port: 3306
   pool: 5
