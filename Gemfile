@@ -42,7 +42,7 @@ else
   #   raise "Don't know what gem to use for adapter #{adapter}"
   # end
 end
-
+gem 'bundler'
 gem 'rails', '~> 3.2.18'
 gem 'therubyracer'
 gem 'mysql2'
